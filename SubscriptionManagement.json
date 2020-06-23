@@ -5,7 +5,7 @@
     "version" : "v01",
     "title" : "Subscription Management"
   },
-  "host" : "ucf1-zmyc-fa-ext.oracledemos.com",
+  "host" : "ucf1-zoml-fa-ext.oracledemos.com",
   "basePath" : "/crmRestApi/resources/11.13.18.05",
   "schemes" : [ "https" ],
   "paths" : {
