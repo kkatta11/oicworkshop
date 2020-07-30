@@ -1,0 +1,187 @@
+{
+  "Resources" : {
+    "PO" : {
+      "discrColumnType" : false,
+      "title" : "PO",
+      "attributes" : [ {
+        "name" : "id",
+        "type" : "integer",
+        "updatable" : true,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "Id"
+      }, {
+        "name" : "creationDate",
+        "type" : "datetime",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "inCreate",
+        "title" : "Created"
+      }, {
+        "name" : "lastUpdateDate",
+        "type" : "datetime",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "Last Updated"
+      }, {
+        "name" : "createdBy",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "inCreate",
+        "title" : "Created By"
+      }, {
+        "name" : "lastUpdatedBy",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "Last Updated By"
+      }, {
+        "name" : "pOHeaderId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : true,
+        "queryable" : true,
+        "allowChanges" : "inCreate",
+        "title" : "POHeaderId"
+      }, {
+        "name" : "orderNumber",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "OrderNumber"
+      }, {
+        "name" : "procurementBUId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "ProcurementBUId"
+      }, {
+        "name" : "procurementBusinessUnit",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "ProcurementBusinessUnit"
+      }, {
+        "name" : "supplierId",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "SupplierId"
+      }, {
+        "name" : "supplier",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "Supplier"
+      }, {
+        "name" : "soldToLegalEntity",
+        "type" : "string",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "SoldToLegalEntity"
+      }, {
+        "name" : "lOCId",
+        "type" : "number",
+        "updatable" : true,
+        "mandatory" : false,
+        "queryable" : true,
+        "allowChanges" : "always",
+        "title" : "LOCId"
+      } ],
+      "collection" : {
+        "rangeSize" : 25,
+        "finders" : [ {
+          "name" : "PrimaryKey",
+          "attributes" : [ {
+            "name" : "id",
+            "type" : "integer",
+            "updatable" : true,
+            "mandatory" : true,
+            "queryable" : true,
+            "allowChanges" : "always",
+            "title" : "Id"
+          } ]
+        } ],
+        "links" : [ {
+          "rel" : "self",
+          "href" : "https://oictraining1-oicpm-px.integration.ocp.oraclecloud.com:443/ic/builder/design/LetterOfCreditPortalForEventsLab/1.0/resources/data/PO",
+          "name" : "self",
+          "kind" : "collection"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourcecollection+json", "application/json" ]
+        }, {
+          "name" : "create",
+          "method" : "POST",
+          "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ]
+        }, {
+          "name" : "upsert",
+          "method" : "POST",
+          "header" : "Upsert-Mode=true",
+          "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ]
+        } ]
+      },
+      "item" : {
+        "links" : [ {
+          "rel" : "self",
+          "href" : "https://oictraining1-oicpm-px.integration.ocp.oraclecloud.com:443/ic/builder/design/LetterOfCreditPortalForEventsLab/1.0/resources/data/PO/{id}",
+          "name" : "self",
+          "kind" : "item"
+        }, {
+          "rel" : "canonical",
+          "href" : "https://oictraining1-oicpm-px.integration.ocp.oraclecloud.com:443/ic/builder/design/LetterOfCreditPortalForEventsLab/1.0/resources/data/PO/{id}",
+          "name" : "canonical",
+          "kind" : "item"
+        } ],
+        "actions" : [ {
+          "name" : "get",
+          "method" : "GET",
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ]
+        }, {
+          "name" : "update",
+          "method" : "PATCH",
+          "requestType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ],
+          "responseType" : [ "application/vnd.oracle.adf.resourceitem+json", "application/json" ]
+        }, {
+          "name" : "delete",
+          "method" : "DELETE"
+        } ]
+      },
+      "links" : [ {
+        "rel" : "self",
+        "href" : "https://oictraining1-oicpm-px.integration.ocp.oraclecloud.com:443/ic/builder/design/LetterOfCreditPortalForEventsLab/1.0/resources/data/PO/describe",
+        "name" : "self",
+        "kind" : "describe"
+      }, {
+        "rel" : "canonical",
+        "href" : "https://oictraining1-oicpm-px.integration.ocp.oraclecloud.com:443/ic/builder/design/LetterOfCreditPortalForEventsLab/1.0/resources/data/PO/describe",
+        "name" : "canonical",
+        "kind" : "describe"
+      } ]
+    }
+  }
+}
